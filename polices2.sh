@@ -1,3 +1,5 @@
+Desativar serviços desnecessários
+
 # Desativar serviço de Telnet
 sc config Telnet start= disabled
 
