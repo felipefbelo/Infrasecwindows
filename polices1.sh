@@ -1,3 +1,5 @@
+Configurar políticas de segurança
+
 # Configurar políticas de segurança local
 secedit /configure /cfg %windir%\inf\defltbase.inf /db defltbase.sdb /verbose
 
