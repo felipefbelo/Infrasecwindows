@@ -21,9 +21,8 @@ System.Management.Automation.AuthorizationManager
 "Microsoft.PowerShell"))´
 
 PortScan:
-• 1..1024 | % {echo ((new-object Net.Sockets.TcpClient).Connect(“IP”,$_))
-“Port $_ is open” } 2>$null
-• $ports=1..1024;$ip=“ip”;foreach($port in $ports) {try{$socket= New-
+1..1024 | % {echo ((new-object Net.Sockets.TcpClient).Connect(“IP”,$_))
+“Port $_ is open” } 2>$null $ports=1..1024;$ip=“ip”;foreach($port in $ports) {try{$socket= New-
 Object System.Net.Sockets.TcpClient($ip,$port);} catch{}; if($socket –ne
 $null) {echo $ip“:”$port“ – Open”; $socket=null;}else{echo $ip“:”$port“
 – Close”;}}
