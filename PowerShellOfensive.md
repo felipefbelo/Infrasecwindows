@@ -13,7 +13,7 @@ Bypass do ExecutionPolicy:
 
 
 - Bypass do ExecutionPolicy:
-Parâmetros
+
 ($bpexec=$executioncontext.gettype().getfield("_context","no
 npublic,instance").getvalue($executioncontext)).gettype().get
 field("_authorizationManager","nonpublic,instance").setvalue($
