@@ -1,8 +1,0 @@
-Script em powershell que lista todas as GPOs ativas
-
-
-$reportFile = "c:\AllSettingsNabledGpos.csv"
-Set-Content -Path $reportFile -Value ("GPO Name,Settings")
-Get-GPO -All | where{ $_.GpoStatus -eq "AllSettingsEnabled" } | % {
-    add-Content -Path $reportFile -Value ($_.displayName+","+$_.gpoStatus)
-}
